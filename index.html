@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Shopping Cart</h1>
+      </div>
+      <div class="row">
+        <div>
+          <dideev class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h1 class="panel-title">List Products</h1>
+              </div>
+              <div class="panel-body" id="list-product">
+                <div>
+                  <div class="media product">
+                    <div class="media-left">
+                      <a href="#"
+                        ><img
+                          class="media-object"
+                          src="images/pizza.jpg"
+                          alt="pizza"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Pizza</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At dicta asperiores veniam repellat unde debitis
+                        quisquam magnam magni ut deleniti!
+                      </p>
+                      <span class="price"> 30 USD</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="media product">
+                    <div class="media-left">
+                      <a href="#"
+                        ><img
+                          class="media-object"
+                          src="images/Hamburger.jpg"
+                          alt="pizza"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Hamburger</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At dicta asperiores veniam repellat unde debitis
+                        quisquam magnam magni ut deleniti!
+                      </p>
+                      <input
+                        name="quantity-product-1"
+                        type="number"
+                        value="4"
+                      /><a data-product="1" class="price">15 USD </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="media product">
+                    <div class="media-left">
+                      <a href="#"
+                        ><img
+                          class="media-object"
+                          src="images/bread.jpg"
+                          alt="pizza"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Bread</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At dicta asperiores veniam repellat unde debitis
+                        quisquam magnam magni ut deleniti!
+                      </p>
+                      <input
+                        name="quantity-product-1"
+                        type="number"
+                        value="1"
+                      /><a data-product="1" class="price">20 USD </a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="media product">
+                    <div class="media-left">
+                      <a href="#"
+                        ><img
+                          class="media-object"
+                          src="images/cake.jpg"
+                          alt="pizza"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">Cake</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. At dicta asperiores veniam repellat unde debitis
+                        quisquam magnam magni ut deleniti!
+                      </p>
+                      <input
+                        name="quantity-product-1"
+                        type="number"
+                        value="1"
+                      /><a data-product="1" class="price">10 USD </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </dideev>
+        </div>
+        <div>
+          <divdffg class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h1 class="panel-title">Your Cart</h1>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th width="4%">STT</th>
+                      <th>Name</th>
+                      <th width="15%">Price</th>
+                      <th width="4%">Quantity</th>
+                      <th width="25%">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="my-cart-body">
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Cake</td>
+                      <td>10 USD</td>
+                      <td>
+                        <input
+                          name="cart-item-quantity-1"
+                          type="number"
+                          value="15"
+                        />
+                      </td>
+                      <td>
+                        <a
+                          class="label label-info update-cart-item"
+                          data-product=""
+                          >Update</a
+                        ><a
+                          class="label label-danger delete-cart-item"
+                          data-product=""
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Hamburger</td>
+                      <td>15 USD</td>
+                      <td>
+                        <input
+                          name="cart-item-quantity-1"
+                          type="number"
+                          value="32"
+                        />
+                      </td>
+                      <td>
+                        <a
+                          class="label label-info update-cart-item"
+                          data-product=""
+                          >Update</a
+                        ><a
+                          class="label label-danger delete-cart-item"
+                          data-product=""
+                          >Delete</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot id="my-cart-footer">
+                    <tr>
+                      <td colspan="4">
+                        There are <b>2</b> items in your shopping cart.
+                      </td>
+                      <td colspan="2" class="total-price text-left">630 USD</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="alert alert-success" role="alert" id="mnotification">
+              Add to cart successfully
+            </div>
+          </divdffg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
